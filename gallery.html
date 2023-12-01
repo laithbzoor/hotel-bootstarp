@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/gallery.css" />
+    <link rel="stylesheet" href="/assets/css/media.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png" />
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top p-0 pt-4" style=" transition: 0.5s; ">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="/assets/img/logo-light.png" alt="Logo" /></a>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav m-auto mb-1 pt-2">
+                    <li class="nav-item me-3">
+                        <a class="nav-link active text-white" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <div class="dropdown">
+                            <a class="btn  nav-link bg-transparent border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="/gallery.html">Gallery</a></li>
+                            </ul>
+                          </div>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="/index.html#about">About</a>
+                    </li>
+
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="/index.html#rooms">Rooms</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="/index.html#blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="/index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#" class="mignfy"><i class="search fa-solid fa-magnifying-glass p-4 text-white"></i></a>
+
+            <a class="Book-button text-white" href="#">BOOK YOUR STAY<span style="top: 100px; left: 0px"></span></a>
+        </div>
+    </nav>
+    <!--contactbackground-->
+    <header id="home">
+        <div class="page-title">
+            <div class="auto-container">
+                <h1 class="main-header">Gallery
+
+
+                </h1>
+            </div>
+        </div>
+        <div class="link-destination">
+            <div class="auto-container">
+                <ul class="link-list d-flex justify-content-center">
+                    <li class="me-1 home-hover"><a href="/index.html">Home</a></li>
+                    <li class="contact-link me-1">Gallery
+
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="go-top z-3 opacity-0 invisible" style="transition: 0.5s;">
+            <di class="d-flex align-items-center">
+                <div class="go-top-line">
+                    <div class="line" style="width: 9%"></div>
+                </div>
+                <a class="go-top-text" href="#home">Go To Top</a>
+            </di>
+        </div>
+    </header>
+    <!--filter-->
+    <section class="py-4 mb-5">
+        <div class="container pb-5 mb-5 " style="position: static; max-width: 1320px; padding: 0px 15px; margin: 0 auto;">
+
+            <ul class="nav nav-tabs mt-5 pt-5 d-flex justify-content-center border-bottom-0 gap-1" id="myTab" role="tablist">
+                <li class="nav-item filter-tabs" role="presentation">
+                    <button class="nav-link filter-btns text-uppercase  active" id="ALL-tab" data-bs-toggle="tab"
+                        data-bs-target="#ALL-tab-pane" type="button" role="tab" aria-controls="ALL-tab-pane"
+                        aria-selected="true">
+                        All Works
+                    </button>
+                </li>
+                <li class="nav-item filter-tabs" role="presentation">
+                    <button class="nav-link filter-btns text-uppercase " id="Nursing-tab" data-bs-toggle="tab"
+                        data-bs-target="#Nursing-tab-pane" type="button" role="tab" aria-controls="Nursing-tab-pane"
+                        aria-selected="false">
+                        Nursing
+                    </button>
+                </li>
+                <li class="nav-item filter-tabs" role="presentation">
+                    <button class="nav-link filter-btns text-uppercase " id="Medical-tab" data-bs-toggle="tab"
+                        data-bs-target="#Medical-tab-pane" type="button" role="tab" aria-controls="Medical-tab-pane"
+                        aria-selected="false">
+                        Medical </button>
+                </li>
+                <li class="nav-item filter-tabs" role="presentation">
+                    <button class="nav-link filter-btns text-uppercase " id="Senior-tab" data-bs-toggle="tab"
+                        data-bs-target="#Senior-tab-pane" type="button" role="tab" aria-controls="Senior-tab-pane"
+                        aria-selected="false">
+                        Senior
+                    </button>
+                </li>
+
+            </ul>
+            <div class="tab-content " id="myTabContent">
+                <div class="tab-pane fade show active" id="ALL-tab-pane" role="tabpanel" aria-labelledby="ALL-tab"
+                    tabindex="0">
+                    <div class="row row-gap-3">
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-1.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-2.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-3.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-4.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-5.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-6.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-7.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-8.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-9.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Nursing-tab-pane" role="tabpanel" aria-labelledby="Nursing-tab"
+                    tabindex="0">
+                    <div class="row row-gap-3">
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-1.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-2.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-3.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-4.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-5.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-6.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-7.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                       
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Medical-tab-pane" role="tabpanel" aria-labelledby="Medical-tab"
+                    tabindex="0">
+                    <div class="row row-gap-3">
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-1.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-2.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-3.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-4.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                     
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Senior-tab-pane" role="tabpanel" aria-labelledby="Senior-tab"
+                    tabindex="0">
+                    <div class="row row-gap-3">
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-1.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-2.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 mt-3">
+
+
+                            <div class="project-card position-relative">
+                                <div
+                                    class="overlay rounded d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+                                    
+                                        <i class="fa-solid fa-magnifying-glass rounded-circle  p-3"></i>
+                                </div>
+                                <img src="/assets/img/gallery-9.jpg" class="w-100" alt="" />
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact my-5">
+                        <div class="footer-title py-2">
+                            <h4>Contact Us</h4>
+                        </div>
+                        <ul class="contact-list my-3">
+                            <li class="my-3">
+                                <span>Add:</span><a href="#" class="contact-links mx-2">
+                                    New Hyde Park, NY 11040</a>
+                            </li>
+                            <li class="my-3">
+                                <span>Email:</span><a href="mailto:example@royalking.com" class="contact-links mx-2">
+                                    example@royalking.com</a>
+                            </li>
+                            <li class="my-3">
+                                <span>Phone:</span><a href="tel:3336660000" class="contact-links mx-2">333 666 0000</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-social-icon d-flex align-items-center gap-4 my-3">
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links my-5">
+                        <div class="footer-title py-2">
+                            <h4>Links</h4>
+                        </div>
+                        <ul class="links-list">
+                            <li class="my-3"><a href="#">About Us</a></li>
+                            <li class="my-3"><a href="#">Services</a></li>
+                            <li class="my-3"><a href="#">Case</a></li>
+                            <li class="my-3"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-hours my-5">
+                        <div class="footer-title py-2">
+                            <h4>Hours</h4>
+                        </div>
+                        <p class="my-3">
+                            Tincidunt neque pretium lectus <br />
+                            donec risus.
+                        </p>
+                        <p>
+                            Mon - Fri: 9:00AM - 6:00PM <br />
+                            Sat - Sun: 8:00AM - 4:00PM
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="newsletter my-5">
+                        <div class="footer-title py-2">
+                            <h4>Newsletter</h4>
+                        </div>
+                        <div class="newsletter-content">
+                            <p class="my-3" style="    color: rgb(190, 190, 195);">
+                                Tincidunt neque pretium lectus <br />
+                                donec risus.
+                            </p>
+                            <div class="footer-newsletter">
+                                <form class="d-flex flex-wrap">
+                                    <input type="email" placeholder="Email address" />
+                                    <a class="btn-1 py-3 px-5 booking-input text-uppercase py-3 px-5 p-3"
+                                        href="#">Subscribe<span style="top: 100px; left: 0px"></span></a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrights py-4">
+        <div class="container">
+            <p>Copyright 2022 by royalking theme All Right Reserved.</p>
+        </div>
+    </div>
+    <script src="/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/js/main.js"></script>
+</body>
+
+</html>

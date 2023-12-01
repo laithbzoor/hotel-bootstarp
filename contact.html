@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel</title>
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/contact-style.css" />
+  <link rel="stylesheet" href="/assets/css/media.css" />
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg fixed-top p-0 pt-4" style=" transition: 0.5s; ">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="/assets/img/logo-light.png" alt="Logo" /></a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav m-auto mb-1 pt-2">
+                <li class="nav-item me-3">
+                    <a class="nav-link active text-white" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item me-3">
+                    <div class="dropdown">
+                        <a class="btn  nav-link bg-transparent border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="/gallery.html">Gallery</a></li>
+                        </ul>
+                      </div>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="/index.html#about">About</a>
+                </li>
+
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="/index.html#rooms">Rooms</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="/index.html#blogs">Blogs</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="/index.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="#" class="mignfy"><i class="search fa-solid fa-magnifying-glass p-4 text-white"></i></a>
+
+        <a class="Book-button text-white" href="#">BOOK YOUR STAY<span style="top: 100px; left: 0px"></span></a>
+    </div>
+</nav>
+  <!--contactbackground-->
+  <header class="" id="home">
+
+    <div class="page-title">
+      <div class="auto-container">
+        <h1 class="main-header">Contact Us</h1>
+      </div>
+
+    </div>
+    <div class="link-destination">
+      <div class="auto-container">
+        <ul class="link-list d-flex justify-content-center">
+          <li class="me-1"><a href="/index.html">Home</a></li>
+          <li class="contact-link me-1">Contact Us</li>
+        </ul>
+      </div>
+    </div>
+    <div class="go-top z-3 opacity-0 invisible" style="transition: 0.5s;">
+      <di class="d-flex align-items-center">
+          <div class="go-top-line">
+              <div class="line" style="width: 9%"></div>
+          </div>
+          <a class="go-top-text" href="#home">Go To Top</a>
+      </di>
+  </div>
+
+  </header>
+  <!--contact-form-->
+  <section class="form-section section ">
+    <div class="auto-container">
+      <div class="section-title mb-5">
+        <span>Our location</span>
+        <h2 class="title-heading">Explore Our Office <br> Worldwide</h2>
+      </div>
+      <ul class="contact-info d-flex flex-wrap mb-4 position-relative">
+        <li class="me-5">
+          <h4 class=" mb-2"><i class="me-3 fa-solid fa-location-dot"></i>Location</h4>
+          <p>New Hyde Park, NY 11040</p>
+        </li>
+        <li class="me-5 line-before">
+          <h4 class=" mb-2"><i class="me-3 fa-solid fa-phone"></i>Phone No</h4>
+          <p><a href="tel:(+91) 333 666 0021">(+91) 333 666 0021</a></p>
+        </li>
+        <li class="me-5 line-before">
+          <h4 class=" mb-2"><i class="me-3 fa-regular fa-envelope"></i>Email</h4>
+          <p><a href="mailto:support@example.com">support@example.com</a></p>
+        </li>
+      </ul>
+      <div class="row ">
+        <div class="col-lg-5 p-0 ">
+          <div class="form">
+            <form>
+              <div class="row">
+                <div class="form-item col-md-12 mb-2">
+                  <input type="text" class="w-100" name="form_name" value="" placeholder="Your Name" required="">
+                </div>
+
+                <div class="form-item col-md-12 mb-2">
+                  <input type="text" class="w-100" name="email" value="" placeholder="Your Email" required="">
+                </div>
+
+                <div class="form-item col-md-12 mb-2">
+                  <input type="text" class="w-100" name="form_subject" value="" placeholder="Subject" required="">
+                </div>
+
+                <div class="form-item col-md-12 mb-2">
+                  <textarea class="w-100" name="form_message" placeholder="Massage"></textarea>
+                </div>
+              
+                <div class="form-item col-md-12 my-2">
+                  <div class=" booking-input  text-uppercase  d-flex justify-content-start  ">
+                    <a class="btn-1 py-3 px-5 " href="#">Submit Now<span style="top: 100px; left: 0px;"></span></a>
+
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-7 p-0">
+          <div class="map mb-3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55945.16225505631!2d-73.90847969206546!3d40.66490264739892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1601263396347!5m2!1sen!2sbd"
+              width="600" height="535" frameborder="0" style="border:0; width: 100%" allowfullscreen=""
+              aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--footer-->
+  <footer class="footer py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+
+          <div class="footer-contact  my-5">
+            <div class="footer-title py-2">
+              <h4>Contact Us</h4>
+            </div>
+            <ul class="contact-list my-3">
+              <li class="my-3"><span>Add:</span><a href="#" class="contact-links mx-2"> New Hyde Park, NY 11040</a>
+              </li>
+              <li class="my-3"><span>Email:</span><a href="mailto:example@royalking.com" class="contact-links mx-2">
+                  example@royalking.com</a></li>
+              <li class="my-3"><span>Phone:</span><a href="tel:3336660000" class="contact-links mx-2">333 666 0000</a>
+              </li>
+            </ul>
+            <ul class="footer-social-icon d-flex align-items-center gap-4 my-3">
+              <li><a href="#"><i class="fab fa-facebook-f "></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter "></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in "></i></a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-lg-2 col-md-6">
+
+          <div class="footer-links  my-5">
+            <div class="footer-title py-2">
+              <h4>Links</h4>
+            </div>
+            <ul class="links-list">
+              <li class="my-3"><a href="#">About Us</a></li>
+              <li class="my-3"><a href="#">Services</a></li>
+              <li class="my-3"><a href="#">Case</a></li>
+              <li class="my-3"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-hours  my-5">
+
+            <div class="footer-title py-2">
+              <h4>Hours</h4>
+            </div>
+            <p class="my-3">Tincidunt neque pretium lectus <br>
+              donec risus.</p>
+            <p>Mon - Fri: 9:00AM - 6:00PM <br> Sat - Sun: 8:00AM - 4:00PM</p>
+
+
+
+          </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="newsletter my-5">
+            <div class="footer-title py-2">
+              <h4>Newsletter
+              </h4>
+            </div>
+            <div class="newsletter-content">
+              <p class="my-3" style="color: rgb(190, 190, 195);">Tincidunt neque pretium lectus <br>
+                donec risus.</p>
+              <div class="footer-newsletter">
+                <form class="d-flex  flex-wrap">
+                  
+                  <input type="email" placeholder="Email address">
+                  <a class="btn-1 py-3 px-5 booking-input  text-uppercase py-3 px-5 p-3 " href="#">Subscribe<span
+                      style="top: 100px; left: 0px;"></span></a>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </footer>
+  <div class="copyrights py-4">
+    <div class="container">
+
+      <p>Copyright 2022 by royalking theme All Right Reserved.</p>
+
+    </div>
+  </div>
+  <script src="/vendor/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/js/main.js"></script>
+
+</body>
+
+</html>
